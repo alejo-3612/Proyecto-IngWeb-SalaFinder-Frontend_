@@ -1,0 +1,90 @@
+[
+  {
+    "id_space": "a1b2c3d4-0001-0000-0000-000000000001",
+    "name": "Sala 101",
+    "type": "Salón",
+    "capacity": 30,
+    "building": "Bloque A",
+    "resources": "Proyector,Tablero,Aire acondicionado",
+    "allowedPrograms": "Ingeniería de Sistemas,Ingeniería Industrial",
+    "requiresApproval": false,
+    "isActive": true
+  },
+  {
+    "id_space": "a1b2c3d4-0002-0000-0000-000000000002",
+    "name": "Lab Cómputo 1",
+    "type": "Laboratorio",
+    "capacity": 20,
+    "building": "Bloque B",
+    "resources": "Computadores,Proyector,Aire acondicionado",
+    "allowedPrograms": "Ingeniería de Sistemas,Ingeniería Electrónica",
+    "requiresApproval": true,
+    "isActive": true
+  },
+  {
+    "id_space": "a1b2c3d4-0003-0000-0000-000000000003",
+    "name": "Auditorio Principal",
+    "type": "Auditorio",
+    "capacity": 200,
+    "building": "Bloque C",
+    "resources": "Proyector,Sonido,Aire acondicionado,Sillas",
+    "allowedPrograms": "Todos",
+    "requiresApproval": true,
+    "isActive": true
+  },
+  {
+    "id_space": "a1b2c3d4-0004-0000-0000-000000000004",
+    "name": "Sala de Reuniones 2",
+    "type": "Sala de Reuniones",
+    "capacity": 10,
+    "building": "Bloque A",
+    "resources": "Tablero,TV",
+    "allowedPrograms": "Todos",
+    "requiresApproval": false,
+    "isActive": true
+  },
+  {
+    "id_space": "a1b2c3d4-0005-0000-0000-000000000005",
+    "name": "Lab Electrónica",
+    "type": "Laboratorio",
+    "capacity": 25,
+    "building": "Bloque D",
+    "resources": "Equipos,Osciloscopios,Proyector",
+    "allowedPrograms": "Ingeniería Electrónica,Ingeniería Mecatrónica",
+    "requiresApproval": true,
+    "isActive": true
+  },
+  {
+    "id_space": "a1b2c3d4-0006-0000-0000-000000000006",
+    "name": "Sala 205",
+    "type": "Salón",
+    "capacity": 40,
+    "building": "Bloque B",
+    "resources": "Proyector,Tablero",
+    "allowedPrograms": "Todos",
+    "requiresApproval": false,
+    "isActive": false
+  },
+  {
+    "id_space": "a1b2c3d4-0007-0000-0000-000000000007",
+    "name": "Sala de Estudio 3",
+    "type": "Sala de Estudio",
+    "capacity": 15,
+    "building": "Bloque C",
+    "resources": "Tablero,Sillas",
+    "allowedPrograms": "Todos",
+    "requiresApproval": false,
+    "isActive": true
+  },
+  {
+    "id_space": "a1b2c3d4-0008-0000-0000-000000000008",
+    "name": "Sala 310",
+    "type": "Salón",
+    "capacity": 35,
+    "building": "Bloque D",
+    "resources": "Proyector,Tablero,Aire acondicionado",
+    "allowedPrograms": "Ingeniería Industrial,Administración",
+    "requiresApproval": false,
+    "isActive": true
+  }
+]
