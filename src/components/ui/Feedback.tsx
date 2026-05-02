@@ -34,8 +34,8 @@ export function StateMessage({ title, type, description, actionText, onAction }:
   return (
     <div className="rounded-lg border border-dashed border-gray-200 bg-white p-6 text-center">
       <p className="text-2xl mb-2">
-        {type === "error" ? "⚠️" : type === "loading" ? "⏳" : "📭"}
-      </p>
+        {type === "error" ? "!" : type === "loading" ? "..." : "-"}
+       </p>
       <h3 className="text-base font-semibold text-gray-800">{title}</h3>
       {description && <p className="mt-1 text-sm text-gray-500">{description}</p>}
       {actionText && onAction && (
