@@ -1,0 +1,50 @@
+[
+  {
+    "id_reservation": "r0000001-0000-0000-0000-000000000001",
+    "spaceId": "a1b2c3d4-0001-0000-0000-000000000001",
+    "spaceName": "Sala 101",
+    "userId": "user-001",
+    "date": "2026-04-28",
+    "startTime": "08:00",
+    "endTime": "10:00",
+    "purpose": "Clase de Algoritmos",
+    "attendeeCount": 25,
+    "status": "Approved"
+  },
+  {
+    "id_reservation": "r0000002-0000-0000-0000-000000000002",
+    "spaceId": "a1b2c3d4-0002-0000-0000-000000000002",
+    "spaceName": "Lab Cómputo 1",
+    "userId": "user-001",
+    "date": "2026-04-29",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "purpose": "Práctica de bases de datos",
+    "attendeeCount": 15,
+    "status": "Pending"
+  },
+  {
+    "id_reservation": "r0000003-0000-0000-0000-000000000003",
+    "spaceId": "a1b2c3d4-0004-0000-0000-000000000004",
+    "spaceName": "Sala de Reuniones 2",
+    "userId": "user-001",
+    "date": "2026-04-30",
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "purpose": "Reunión de proyecto",
+    "attendeeCount": 8,
+    "status": "Approved"
+  },
+  {
+    "id_reservation": "r0000004-0000-0000-0000-000000000004",
+    "spaceId": "a1b2c3d4-0003-0000-0000-000000000003",
+    "spaceName": "Auditorio Principal",
+    "userId": "user-001",
+    "date": "2026-05-05",
+    "startTime": "09:00",
+    "endTime": "12:00",
+    "purpose": "Evento cultural",
+    "attendeeCount": 150,
+    "status": "Rejected"
+  }
+]
