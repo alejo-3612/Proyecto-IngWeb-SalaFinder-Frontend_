@@ -10,3 +10,8 @@ Evita reservas en fechas pasadas
 Registra todos las reservas del usuario
 
 Calendario con información sobre eventos en cada día
+
+## Comandos Importantes:
+para clonar: git clone https://github.com/alejo-3612/Proyecto-IngWeb-SalaFinder-Frontend_.git
+instalar npm: npm install
+correr el código: npm run build
