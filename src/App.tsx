@@ -10,6 +10,7 @@ import ReservePage from "./pages/ReservePage";
 import ReservationsPage from "./pages/ReservationsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import CalendarPage from "./pages/CalendarPage";
+import AdminPage from "./pages/AdminPage";
 
 function App() {
   const [user, setUser] = useState<AuthUser | null>(null);
@@ -36,6 +37,10 @@ function App() {
         <Route
           path="/reserve/:id"
           element={user ? <ReservePage user={user} /> : <Navigate to="/login" replace />}
+        />
+        <Route
+          path="/admin"
+          element={user?.role === "Admin" ? <AdminPage user={user} /> : <Navigate to="/login" replace />}
         />
         <Route
           path="/reservations"

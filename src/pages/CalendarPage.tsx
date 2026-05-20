@@ -149,7 +149,7 @@ export default function CalendarPage({ user }: Props) {
 
               {weekDays.map((d) => {
                 const ds = toDateStr(d);
-                const dayEvents = reservations.filter((r) => r.date === ds);
+                const dayEvents = reservations.filter((r) => r.date.slice(0, 10) === ds);
                 return (
                   <div key={ds} style={{ position: "relative", borderRight: "0.5px solid #e5e7eb" }}>
                     {HOURS.map((h) => (

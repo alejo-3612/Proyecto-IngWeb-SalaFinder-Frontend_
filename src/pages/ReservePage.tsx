@@ -157,7 +157,7 @@ const isValid =
                max={space?.capacity ?? 1}
                className={fieldBase}
                value={attendeeCount.toString()}
-               onChange={(e) => setAttendeeCount(e.target.value ? Number(e.target.value) : 1)}
+               onChange={(e) => setAttendeeCount(Number(e.target.value))}
                required
               />
               {attendeeCount > (space?.capacity ?? 1) && (<span className="text-xs text-red-500">Supera la capacidad máxima de {space?.capacity} personas </span>)}

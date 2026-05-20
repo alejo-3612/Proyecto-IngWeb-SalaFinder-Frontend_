@@ -51,6 +51,16 @@ export default function NavBar({ user, onLogout }: Props) {
               >
                 Mis Reservas
               </NavLink>
+              {user.role === "Admin" && (
+                <NavLink
+                  to="/admin"
+                  className={({ isActive }) =>
+                    isActive ? `${linkBase} ${active}` : linkBase
+                  }
+                >
+                  Panel Admin
+                </NavLink>
+              )}
             </>
           )}
         </nav>
