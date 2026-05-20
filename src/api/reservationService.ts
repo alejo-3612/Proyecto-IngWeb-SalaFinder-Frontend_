@@ -38,4 +38,4 @@ export async function cancelReservation(
     headers: { Authorization: `Bearer ${token}` },
   });
   return res.ok;
-}
+f
