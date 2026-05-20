@@ -166,14 +166,19 @@ const isValid =
 
             <label className="flex flex-col gap-1">
               <span className="text-sm text-gray-700">Tu programa académico</span>
-              <input
-                type="text"
+              <select
                 className={fieldBase}
                 value={userProgram}
                 onChange={(e) => setUserProgram(e.target.value)}
-                placeholder="Ej: Ingeniería de Sistemas"
                 required
-              />
+                >
+                <option value="">Selecciona tu programa</option>
+                <option value="Ingenieria sistemas">Ingenieria sistemas</option>
+                <option value="Ingenieria mecatronica">Ingenieria mecatronica</option>
+                <option value="Ingenieria financiera">Ingenieria financiera</option>
+                <option value="Ingenieria administrativa">Ingenieria administrativa</option>
+                <option value="Ingenieria civil">Ingenieria civil</option>
+              </select>
             </label>
           </div>
 

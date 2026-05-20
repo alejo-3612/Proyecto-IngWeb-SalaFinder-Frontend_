@@ -77,12 +77,14 @@ export default function RegisterPage() {
               <label className="flex flex-col gap-1">
                 <span className="text-sm text-gray-700">Rol</span>
                 <select
-                  className="rounded-md border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand-300"
-                  value={role}
-                  onChange={(e) => setRole(e.target.value)}
+                className="rounded-md border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand-300"
+                value={role}
+                onChange={(e) => setRole(e.target.value)}
+                required
                 >
-                  <option value="Student">Estudiante</option>
-                  <option value="Staff">Docente / Staff</option>
+                <option value="Student">Estudiante</option>
+                <option value="Staff">Docente / Staff</option>
+                <option value="Admin">Administrador</option>
                 </select>
               </label>
 

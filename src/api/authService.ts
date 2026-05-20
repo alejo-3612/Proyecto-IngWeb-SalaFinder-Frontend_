@@ -24,6 +24,6 @@ export async function login(dto: LoginDTO): Promise<AuthUser> {
     id: data.id,
     email: dto.Email,
     role: data.role,
-    token: data.Token,
+    token: data.token,
   };
 }
