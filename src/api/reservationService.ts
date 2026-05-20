@@ -38,4 +38,37 @@ export async function cancelReservation(
     headers: { Authorization: `Bearer ${token}` },
   });
   return res.ok;
-f
+}
+
+
+export async function getAllReservations(
+  token: string
+): Promise<Reservation[]> {
+  const res = await fetch(`${BASE_URL}/reservation`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) return [];
+  return res.json();
+}
+ 
+export async function approveReservation(
+  reservationId: string,
+  token: string
+): Promise<boolean> {
+  const res = await fetch(`${BASE_URL}/reservation/approve/${reservationId}`, {
+    method: "PUT",
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return res.ok;
+}
+ 
+export async function rejectReservation(
+  reservationId: string,
+  token: string
+): Promise<boolean> {
+  const res = await fetch(`${BASE_URL}/reservation/reject/${reservationId}`, {
+    method: "PUT",
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return res.ok;
+}
